@@ -1,38 +1,109 @@
-.App {
+body {
+  background: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+/* conteneur principal */
+.app {
+  width: 600px;
+  margin: 30px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* header */
+header {
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header h1 {
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* question */
+h3 {
+  margin-bottom: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* options */
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 8px;
+  border: none;
+  background: #dddddd;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #ccc;
+}
+
+/* option choisie */
+.selected {
+  background: #4caf50;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* bonne / mauvaise réponse */
+.correct {
+  color: green;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wrong {
+  color: red;
+  font-weight: bold;
+}
+
+/* boutons valider / reset */
+.actions button {
+  background: #1386e4;
+  color: rgb(99, 167, 99);
+  margin-top: 10px;
+}
+
+.actions button:hover {
+  background: #126d0f;
+}
+
+/* score */
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+/* container dyal les boutons */
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* bouton valider */
+.btn-valider {
+  flex: 1;
+  background: #4caf50;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-valider:hover {
+  background: #43a047;
+}
+
+/* bouton recommencer */
+.btn-reset {
+  flex: 1;
+  background: #f44336;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-reset:hover {
+  background: #e53935;
 }
